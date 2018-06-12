@@ -12,3 +12,8 @@ body #root {
     display: flex;
     flex-direction: column;
 }
+
+@font-face {
+    font-family: "Shnobel";
+    src: local("Shnobel"), url(./assets/shnobelregular.woff2) format("woff2");
+}
