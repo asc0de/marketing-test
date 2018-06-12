@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "./logo/logo.component";
-import bg from "./assets/background.svg";
+import bg from "./assets/background.png";
 import "./app.css";
 
 const style = {
