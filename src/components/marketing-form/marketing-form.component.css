@@ -1,0 +1,13 @@
+.marketing-form {
+    display: flex;
+    flex-direction: column;
+    counter-reset: section;
+}
+
+.marketing-form .marketing-form__title {
+    font-family: Shnobel, Helvetica Neue, Arial, sans-serif;
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 5vw;
+    font-weight: 300;
+}

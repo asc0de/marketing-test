@@ -1,0 +1,46 @@
+.marketing-form__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.marketing-form__section.marketing-form__section--done .marketing-form__section__label::before {
+    content: "";
+    background-image: url(images/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.5em 0.5em;
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #7f4156;
+    padding: 0.1em;
+}
+
+.marketing-form__section .marketing-form__section__label {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.marketing-form__section .marketing-form__section__label::before {
+    content: counter(section) ".";
+    counter-increment: section;
+    font-family: Shnobel, Helvetica Neue, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 300;
+    margin-right: 0.5em;
+    width: 0.8em;
+}
+
+.marketing-form__section .marketing-form__section__label::after {
+    content: ":";
+}
+
+.marketing-form__section .marketing-form__section__content {
+    display: flex;
+}
+.marketing-form__section .marketing-form__section__content fieldset {
+    border: 0;
+    padding: 0;
+    display: flex;
+}

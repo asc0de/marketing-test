@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Logo from "./logo/logo.component";
-import bg from "../assets/background.svg";
+import MarketingForm from "./marketing-form/marketing-form.container";
+import bg from "./images/background.svg";
 import "./app.css";
 
 const style = {
@@ -15,6 +16,7 @@ class App extends Component {
         return (
             <div className="app" style={style}>
                 <Logo />
+                <MarketingForm />
             </div>
         );
     }

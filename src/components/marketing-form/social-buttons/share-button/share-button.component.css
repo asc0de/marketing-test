@@ -1,0 +1,115 @@
+.share-button {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition: transform 200ms ease-in-out;
+}
+
+.share-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.share-button:disabled:hover {
+    transform: none;
+}
+
+.share-button:disabled:hover::before {
+    opacity: 1;
+    width: 4em;
+    height: 4em;
+}
+
+.share-button:disabled:hover::after {
+    opacity: 0;
+    margin-top: -4em;
+    transform: none;
+}
+
+.share-button:first-child {
+    margin-left: 0;
+}
+
+.share-button:last-child {
+    margin-right: 0;
+}
+
+.share-button::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.5em 2.5em;
+    width: 4em;
+    height: 4em;
+    display: block;
+    transition: opacity 300ms ease-in-out;
+}
+
+.share-button:hover {
+    transform: scale(1.2);
+}
+
+.share-button::after {
+    content: "";
+    opacity: 0;
+    background-image: url(images/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.8em 1.8em;
+    width: 4em;
+    height: 4em;
+    display: block;
+    position: absolute;
+    margin-top: -4em;
+    transition: opacity 300ms ease-in-out;
+}
+
+.share-button:hover::before {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.share-button:hover::after {
+    margin-top: 0;
+    transform: translateY(-50%);
+    opacity: 1;
+}
+
+.share-button--vk {
+    background-color: #45668e;
+}
+
+.share-button--vk::before {
+    background-image: url(images/vk.svg);
+}
+
+.share-button--facebook {
+    background-color: #3b5998;
+}
+
+.share-button--facebook::before {
+    background-image: url(images/facebook.svg);
+}
+
+.share-button--twitter {
+    background-color: #45abe7;
+}
+
+.share-button--twitter::before {
+    background-image: url(images/twitter.svg);
+}
+
+.share-button--ok {
+    background-color: #de7840;
+}
+
+.share-button--ok::before {
+    background-image: url(images/odnoklassniki.svg);
+}
