@@ -19,6 +19,7 @@
     color: #ffffff;
     display: flex;
     align-items: center;
+    font-size: 1.2vw;
 }
 
 .marketing-form__section .marketing-form__section__label::before {
@@ -28,12 +29,9 @@
     color: #ffffff;
     font-size: 2em;
     font-weight: 300;
-    margin-right: 0.5em;
+    margin-left: -1.5em;
     width: 0.8em;
-}
-
-.marketing-form__section .marketing-form__section__label::after {
-    content: ":";
+    position: absolute;
 }
 
 .marketing-form__section .marketing-form__section__content {
@@ -43,4 +41,5 @@
     border: 0;
     padding: 0;
     display: flex;
+    width: 100%;
 }

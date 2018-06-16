@@ -1,4 +1,5 @@
 import { SHARED } from "./social-buttons/share-button/share-button.actions";
+import { SUBMITTED } from "./subscribe-form/subscribe-form.actions";
 
 const initState = {
     shared: false,
@@ -11,6 +12,12 @@ export default function MarketingFormReducer(state = initState, action) {
             return {
                 ...state,
                 shared: true
+            };
+        }
+        case SUBMITTED: {
+            return {
+                ...state,
+                subscribed: true
             };
         }
     }

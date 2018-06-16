@@ -1,0 +1,20 @@
+.subscribe-form__email-input {
+    min-height: 1em;
+    font-size: 1.1em;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 1.5em;
+    outline: none;
+    padding: 0.8em 1.2em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    transition: border 200ms ease-in-out;
+}
+
+.subscribe-form__email-input:disabled {
+    opacity: 0.5;
+}
+
+.subscribe-form__email-input:invalid {
+    border: 2px solid #ff5252;
+}

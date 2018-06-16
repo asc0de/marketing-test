@@ -1,0 +1,57 @@
+.subscribe-form__submit-button {
+    font-family: Shnobel, "Helvetica Neue", Arial, sans-serif;
+    width: 100%;
+    font-size: 2em;
+    background-color: #ffffff;
+    border: transparent 2px solid;
+    color: #7f4156;
+    text-transform: uppercase;
+    border-radius: 1.3em;
+    outline: none;
+    padding: 0.25em 0.5em;
+    margin-bottom: 1em;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-form__submit-button:hover {
+    background-color: #622a3d;
+    color: #fff;
+}
+
+.subscribe-form__submit-button:disabled {
+    border: #ffffff solid 2px;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: default;
+    opacity: 0.5;
+}
+
+.subscribe-form__submit-button .subscribe-form__submit-button__loader {
+    border: 0.1em solid #ffffff;
+    border-top: 0.1em solid #622a3d;
+    border-radius: 50%;
+    width: 0.8em;
+    height: 0.8em;
+    animation: spin 1s linear infinite, appear 0.8s ease-in-out 1;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

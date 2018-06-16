@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     counter-reset: section;
+    max-width: 20vw;
 }
 
 .marketing-form .marketing-form__title {
     font-family: Shnobel, Helvetica Neue, Arial, sans-serif;
     margin-top: 0;
+    margin-bottom: 20px;
     color: #ffffff;
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: 300;
+    text-align: center;
 }
