@@ -7,14 +7,13 @@ import "./subscribe-form.component.css";
 class SubscribeForm extends Component {
     componentDidUpdate() {
         if (this.props.subscribeForm.isFetching) {
-            sendSubscription(this.props.subscribeForm.email).then(
-                () => {
-                    this.props.submitted();
-                },
-                () => {
+            sendSubscription(this.props.marketingForm, this.props.subscribeForm.email)
+                .then(() => {
+                    this.props.submitted(this.props.subscribeForm.email);
+                })
+                .catch(() => {
                     this.props.requestFailed();
-                }
-            );
+                });
         }
     }
     render() {

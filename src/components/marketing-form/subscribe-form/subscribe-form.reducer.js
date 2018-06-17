@@ -1,6 +1,7 @@
 import { EMAIL_ON_CHANGE } from "./email-input/email-input.actions";
 import { CLICKED } from "./submit-button/submit-button.actions";
 import { SUBMITTED, REQUEST_FAILED } from "./subscribe-form.actions";
+import { USER_FETCHED } from "../marketing-from.actions";
 
 const initState = {
     email: "",
@@ -38,6 +39,13 @@ export default function subscribeReducer(state = initState, action) {
                 isFetching: false,
                 isSubmitDisabled: false,
                 isSubmitDisplayed: true
+            };
+        }
+        case USER_FETCHED: {
+            return {
+                ...state,
+                email: action.state.email,
+                isSubmitDisplayed: false
             };
         }
     }

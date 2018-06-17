@@ -1,9 +1,12 @@
 import { SHARED } from "./social-buttons/share-button/share-button.actions";
 import { SUBMITTED } from "./subscribe-form/subscribe-form.actions";
+import { USER_FETCHED } from "./marketing-from.actions";
 
 const initState = {
+    id: 1,
     shared: false,
-    subscribed: false
+    email: "",
+    fetched: false
 };
 
 export default function MarketingFormReducer(state = initState, action) {
@@ -17,7 +20,16 @@ export default function MarketingFormReducer(state = initState, action) {
         case SUBMITTED: {
             return {
                 ...state,
-                subscribed: true
+                email: action.state
+            };
+        }
+        case USER_FETCHED: {
+            return {
+                ...state,
+                id: action.state.id,
+                shared: action.state.shared,
+                email: action.state.email,
+                fetched: true
             };
         }
     }

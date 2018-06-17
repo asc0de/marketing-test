@@ -3,6 +3,12 @@
     flex-direction: column;
     counter-reset: section;
     max-width: 20vw;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+.marketing-form.marketing-form--fetched {
+    opacity: 1;
 }
 
 .marketing-form .marketing-form__title {

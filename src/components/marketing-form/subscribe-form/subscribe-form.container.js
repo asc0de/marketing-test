@@ -4,7 +4,8 @@ import { submitted, requestFailed } from "./subscribe-form.actions";
 
 const mapStateToProps = state => {
     return {
-        subscribeForm: state.subscribeForm
+        subscribeForm: state.subscribeForm,
+        marketingForm: state.marketingForm
     };
 };
 
