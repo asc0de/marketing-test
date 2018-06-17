@@ -5,7 +5,9 @@ import "./share-button.component.css";
 
 class ShareButton extends Component {
     onShareButtonClick() {
-        updateShared(this.props.user);
+        updateShared(this.props.user).then(() => {
+            this.props.userChanged(this.props.user);
+        });
         const currentModal = this.props.onClick();
         const modalInterval = window.setInterval(() => {
             if (currentModal == null || currentModal.closed) {

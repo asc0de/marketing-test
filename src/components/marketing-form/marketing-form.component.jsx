@@ -10,6 +10,7 @@ class MarketingForm extends Component {
     componentDidMount() {
         fetchUser(this.props.marketingForm.id).then(user => {
             this.props.userFetched(user);
+            this.props.userChanged(user);
         });
     }
     render() {

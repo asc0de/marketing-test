@@ -10,6 +10,7 @@ class SubscribeForm extends Component {
             sendSubscription(this.props.marketingForm, this.props.subscribeForm.email)
                 .then(() => {
                     this.props.submitted(this.props.subscribeForm.email);
+                    this.props.userChanged(this.props.marketingForm);
                 })
                 .catch(() => {
                     this.props.requestFailed();

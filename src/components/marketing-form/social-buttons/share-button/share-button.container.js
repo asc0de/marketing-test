@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import { shared } from "./share-button.actions";
+import { userChanged } from "../../../app.actions";
 import ShareButton from "./share-button.component";
 
 const mapStateToProps = state => {
@@ -10,7 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        share: () => dispatch(shared())
+        share: () => dispatch(shared()),
+        userChanged: user => dispatch(userChanged(user))
     };
 };
 
