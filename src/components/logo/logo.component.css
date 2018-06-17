@@ -12,7 +12,7 @@
         left: initial;
         top: initial;
         width: 50vw;
-        bottom: 25vh;
+        bottom: 5vh;
         transform: translateX(-50%);
         margin: auto;
     }
