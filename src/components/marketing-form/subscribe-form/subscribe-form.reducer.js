@@ -45,7 +45,7 @@ export default function subscribeReducer(state = initState, action) {
             return {
                 ...state,
                 email: action.state.email,
-                isSubmitDisplayed: false
+                isSubmitDisplayed: !action.state.email
             };
         }
     }
