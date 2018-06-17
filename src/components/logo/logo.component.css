@@ -5,3 +5,15 @@
     width: 10em;
     z-index: 110;
 }
+
+@media (max-width: 480px) {
+    .app__logo {
+        bottom: 0;
+        left: initial;
+        top: initial;
+        width: 50vw;
+        bottom: 25vh;
+        transform: translateX(-50%);
+        margin: auto;
+    }
+}

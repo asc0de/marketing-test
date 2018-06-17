@@ -61,3 +61,36 @@
         opacity: 1;
     }
 }
+
+@media (max-width: 1200px) {
+    .man .man__text-block .man__text-block-item:nth-child(1) {
+        font-size: 4vw;
+    }
+    .man .man__text-block .man__text-block-item:nth-child(2) {
+        font-size: 5.5vw;
+    }
+    .man .man__text-block .man__text-block-item:nth-child(3) {
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .man .man__text-block .man__text-block-item:nth-child(1) {
+        font-size: 7.5vw;
+    }
+    .man .man__text-block .man__text-block-item:nth-child(2) {
+        font-size: 8vw;
+    }
+    .man .man__text-block .man__text-block-item:nth-child(3) {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .man .man__ground {
+        height: 60vh;
+    }
+    .man .man__text-block {
+        margin-top: -40vh;
+    }
+}

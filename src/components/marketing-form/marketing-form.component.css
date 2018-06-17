@@ -20,3 +20,33 @@
     font-weight: 300;
     text-align: center;
 }
+
+@media (max-width: 1200px) {
+    .marketing-form {
+        max-width: 30vw;
+    }
+
+    .marketing-form .marketing-form__title {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .marketing-form {
+        max-width: 45vw;
+    }
+
+    .marketing-form .marketing-form__title {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .marketing-form {
+        max-width: 70vw;
+    }
+
+    .marketing-form .marketing-form__title {
+        font-size: 12vw;
+    }
+}
