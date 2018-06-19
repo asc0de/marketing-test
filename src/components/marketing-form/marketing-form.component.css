@@ -5,6 +5,7 @@
     max-width: 20vw;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
+    margin-top: 2.6em;
 }
 
 .marketing-form.marketing-form--fetched {
@@ -14,7 +15,7 @@
 .marketing-form .marketing-form__title {
     font-family: Shnobel, Helvetica Neue, Arial, sans-serif;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0.7em;
     color: #ffffff;
     font-size: 3vw;
     font-weight: 300;
@@ -23,11 +24,11 @@
 
 @media (max-width: 1200px) {
     .marketing-form {
-        max-width: 30vw;
+        max-width: 26vw;
     }
 
     .marketing-form .marketing-form__title {
-        font-size: 5vw;
+        font-size: 4.4vw;
     }
 }
 

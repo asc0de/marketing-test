@@ -1,19 +1,15 @@
 .subscribe-form__submit-button {
     font-family: Shnobel, "Helvetica Neue", Arial, sans-serif;
-    width: 100%;
-    font-size: 2em;
+    font-size: 2.4em;
     background-color: #ffffff;
     border: transparent 2px solid;
     color: #7f4156;
-    text-transform: uppercase;
     border-radius: 1.3em;
     outline: none;
-    padding: 0.25em 0.5em;
+    padding: 0.35em 1.2em;
     margin-bottom: 1em;
     transition: all 200ms ease-in-out;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
 }
 
 .subscribe-form__submit-button:hover {
