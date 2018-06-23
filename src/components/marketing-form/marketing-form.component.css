@@ -54,7 +54,8 @@
 
 @media (max-width: 480px) {
     .marketing-form {
-        max-width: 70vw;
+        max-width: 75vw;
+        margin-top: 0;
     }
 
     .marketing-form .marketing-form__title {

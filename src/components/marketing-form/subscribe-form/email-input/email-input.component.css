@@ -18,3 +18,9 @@
 .subscribe-form__email-input:invalid {
     border: 2px solid #ff5252;
 }
+
+@media (max-width: 480px) {
+    .subscribe-form__email-input {
+        margin-bottom: 1em;
+    }
+}

@@ -75,7 +75,7 @@
         font-size: 4.5vw;
     }
     .marketing-form__section .marketing-form__section__label::before {
-        margin-left: -1em;
+        margin-left: -0.85em;
     }
     .marketing-form__section .marketing-form__section__content {
         padding-top: 5vw;
